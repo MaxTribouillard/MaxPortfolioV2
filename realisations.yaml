@@ -1,0 +1,9 @@
+projects:
+  - title: Portflio
+    description: Mon portflio en HTML/CSS, PHP et YAML.
+    image: css/img/portfolio.png
+    link: https://github.com/MaxTribouillard/
+  - title: Dictionnaire
+    description: Un véritable dictionnaire virtuel !
+    image: css/img/dictionnaire.png
+    link: https://github.com/MaxTribouillard/definition-scrapper

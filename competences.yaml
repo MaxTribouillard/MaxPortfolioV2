@@ -1,0 +1,17 @@
+dev:
+  - name: HTML
+    level: 80
+  - name: CSS
+    level: 60
+  - name: JavaScript
+    level: 30
+  - name: PHP
+    level: 30
+  - name: Python
+    level: 40
+  - name: GitHub
+    level: 50
+  - name: Anglais
+    level: 80
+    
+

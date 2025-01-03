@@ -1,0 +1,446 @@
+body {
+    background-color: #110E51;
+    color: #E7ACEC;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+  
+  html:nth-child(1){
+    cursor: url("img/Orange_Arrow_NeonCursor.png"), auto;
+  }
+  
+
+.background{
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    opacity: 90%;
+    /* box-shadow: 0px 10px 40px 1px #E085E5; */
+    border-bottom: solid 2px #8F1DAE;
+    opacity: 0; /* Commence transparent */
+    transform: scale(1); /* Commence légèrement réduit */
+    animation: fadeIn 1.2s ease-out forwards; /* Animation appliquée */
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1; /* Opacité finale */
+      transform: scale(1); /* Taille finale */
+    }
+  }
+
+
+.nameimg {
+    display: block;
+    width: 40%;
+    margin: auto;
+    padding-top: 50px;
+    justify-content: center;
+    opacity: 0; /* Commence transparent */
+    transform: scale(0.9); /* Commence légèrement réduit */
+    animation: fadeIn 1s ease-out forwards; /* Animation appliquée */
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1; /* Opacité finale */
+      transform: scale(1); /* Taille finale */
+    }
+  }
+
+
+/* .navbar{
+    background-color: white;
+    opacity: 10%;
+} */
+
+.menu {
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 40px;
+    opacity: 100%;
+    margin-top: 100px;
+    background: linear-gradient(90deg, rgba(231,172,236,1) 0%, rgba(231,172,236,1) 35%, rgba(0,212,255,1) 100%);
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+ul{
+    justify-content: center;
+}
+
+li{
+    justify-content: center;
+    padding: 80px;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+
+}
+
+.home{
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.contact{
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+li:hover{
+    background-color: #120f57;
+}
+
+a:visited {
+color: white;
+}
+
+a {
+    color: white;
+    cursor: url("img/Purple_Hand_NeonPointer.png"), auto;
+}
+
+/* .mainContent {
+    position: relative;
+} */
+
+.mainTitle {
+    margin-top: 
+    350px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 20px;
+}
+
+/* 
+.mainContent{
+    margin-left: 50px;
+    padding-right: 10%;
+    margin-right: 50%;
+    border-right: solid #8F1DAE 0.5px;
+} */
+
+
+/* .mainContent{
+    display: flex;
+    flex-direction: column;
+}  */
+
+.max{
+    margin: 0px 400px;
+    justify-content: center;
+    display: flex;
+}
+
+.presentation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/* #presentation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} */
+
+
+.skillsTitle{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.skillbar-container {
+    margin: 10px 200px;
+  }
+  
+  .skillbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .skillbar-name {
+    font-size: 20px;
+    margin-right: 200px;
+    padding: 10px 0px;
+    font-weight: bold;
+    color: #E7ACEC;
+  }
+  
+  .skillbar-bar {
+    width: 75%;
+    background: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skillbar-fill {
+    background: linear-gradient(90deg, rgba(231,172,236,1) 0%, rgba(231,172,236,1) 35%, rgba(0,212,255,1) 100%);
+    height: 100%;
+    width: 0; /* Par défaut */
+    border-radius: 10px;
+    animation: fill-bar 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes fill-bar {
+    from {
+      width: 0;
+    }
+    to {
+      width: var(--skill-level, 0%);
+    }
+  }
+
+  .realisations{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-bottom: 20px;
+}
+
+hr {
+    margin: 0px 400px;
+    border-radius: 50px;
+    height: 4px;
+    background-color: #30DDD4;
+    outline: none;
+    border-style: none;
+    margin-bottom: 50px;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background: #110E51;
+    border: 1px solid #E7ACEC;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #E7ACEC;
+    margin-bottom: 15px;
+  }
+  
+  .card a {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #fff;
+    background: #30DDD4;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .card a:hover {
+    background: #E7ACEC;
+  }
+
+.social{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    position: fixed;
+    z-index: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-style: none;
+background: linear-gradient(145deg, #120f57, #0f0d49);
+box-shadow:  15px 15px 31px #0c0a39,
+             -15px -15px 31px #161269;
+             color: #E7ACEC;
+             margin: 20px;
+    cursor: url("img/Purple_Hand_NeonPointer.png"), auto;
+  }
+
+  .socials{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    position: fixed;
+    z-index: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-style: none;
+background: linear-gradient(145deg, #120f57, #0f0d49);
+box-shadow:  15px 15px 31px #0c0a39,
+             -15px -15px 31px #161269;
+             color: #E7ACEC;
+             margin: 20px;
+    cursor: url("img/Purple_Hand_NeonPointer.png"), auto;
+  }
+
+.formations{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-bottom: 20px;
+}
+
+/* Section Formations */
+.formations-container {
+    margin-top: 40px;
+  }
+  
+  .formation-card {
+    background: #110E51;
+    border: 1px solid #E7ACEC;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+  
+  .formation-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 5px;
+  }
+  
+  .formation-institution {
+    font-size: 14px;
+    font-style: italic;
+    color: #E7ACEC;
+    margin-bottom: 10px;
+  }
+  
+  .formation-description {
+    font-size: 14px;
+    color: #E7ACEC;
+  }
+  
+  .contact-container {
+    margin-top: 40px;
+    padding: 20px;
+    background: #110E51;
+    border: 1px solid #E7ACEC;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 600px;
+    margin-right: 600px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    background: #0c0a39;
+    color: white;
+    outline: none;
+  }
+  
+  .contact-form button {
+    padding: 10px 15px;
+    background: #30DDD4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .contact-form button:hover {
+    background: #E7ACEC;
+  }
+
+  .cv{
+    display: flex;
+    justify-content: center;
+    outline: none;
+    cursor: url("img/Purple_Hand_NeonPointer.png"), auto;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    background: linear-gradient(90deg, rgba(231,172,236,1) 0%, rgba(231,172,236,1) 35%, rgba(0,212,255,1) 100%);
+    font-weight: bold;
+    color: white;
+  }
+
+  .cv a:visited {
+          color: white;
+          cursor: url("img/Purple_Hand_NeonPointer.png"), auto;
+      }
+
+
+  .cvButton{
+    display: flex;
+    justify-content: center;
+  }

@@ -1,0 +1,19 @@
+contact_form:
+  title: Contactez-moi
+  fields:
+    - name: name
+      label: Votre Nom
+      type: text
+      placeholder: Entrez votre nom
+      required: true
+    - name: email
+      label: Votre Email
+      type: email
+      placeholder: Entrez votre email
+      required: true
+    - name: message
+      label: Votre Message
+      type: textarea
+      placeholder: Écrivez votre message
+      required: true
+  submit_button: Envoyer
